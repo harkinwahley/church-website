@@ -16,7 +16,7 @@ A responsive church website designed to showcase church information, services, a
 This project demonstrates my ability to convert design ideas into clean, responsive web pages using HTML and CSS.
 
 ## Live Demo
-Coming soon
+https://harkinwahley.github.io/church-website/
 
 ## Author
 Akinwale Akinola  

@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>THE WAY OF GOD BIBLE MINISTRY</title>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Social Media Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -30,19 +33,21 @@
         }
         .navbar-nav .nav-link {
             color: rgb(243, 220, 220) !important;
+            transition: color 0.3s ease;
         }
         .bg-custom-blue {
             background-color: #004085;
         }
 
         .hero-section {
-            /* Using your church building image for the hero background */
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Assets/church building.jpg') center center / cover no-repeat;
+            /* Background uses your uploaded church building photo */
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('church building.jpg') center center / cover no-repeat;
             color: white;
             padding: 8rem 0;
             text-align: center;
             border-bottom-left-radius: 50px;
             border-bottom-right-radius: 50px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
 
         section {
@@ -50,6 +55,26 @@
             background-color: white;
             margin-bottom: 2rem;
             border-radius: 15px;
+        }
+        section:nth-of-type(even) { background-color: var(--secondary-color); }
+        
+        section h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+            text-align: center;
+            position: relative;
+        }
+        section h2::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -10px;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--accent-color);
         }
 
         .event-image {
@@ -66,7 +91,7 @@
             margin: 0 15px;
             transition: 0.3s;
         }
-        .social-icons a:hover { color: #ffc107; }
+        .social-icons a:hover { color: #ffc107; transform: scale(1.1); }
 
         footer {
             background-color: #212529;
@@ -79,8 +104,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-custom-blue sticky-top shadow-sm">
         <div class="container">
-            <!-- Your Logo -->
-            <img src="Assets/-CHURCH LOGO-.jpg" height="40" width="40" alt="logo" class="rounded-circle me-2"> 
+            <img src="-CHURCH LOGO-.jpg" height="40" width="40" alt="logo" class="rounded-circle me-2"> 
             <a class="navbar-brand" href="#home">THE WAY OF GOD BIBLE MINISTRY</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -104,36 +128,37 @@
             <h1 class="display-3 fw-bold">THE WAY OF GOD BIBLE MINISTRY</h1>
             <p class="h4">Mountain of Praise</p>
             <p class="lead">"Behold, I will do a new thing..." - Isaiah 43:19</p>
-            <a href="#events" class="btn btn-warning btn-lg mt-3">Join Us This Sunday!</a>
+            <a href="#events" class="btn btn-warning btn-lg mt-3 shadow">Join Us This Sunday!</a>
         </div>
     </section>
 
     <main class="container mt-5">
+        <!-- About Section -->
         <section id="about">
             <div class="container">
-                <h2 class="text-center mb-4">About Our Ministry</h2>
+                <h2>About Our Ministry</h2>
                 <div class="row align-items-center">
-                    <div class="col-md-6 mb-4">
-                        <!-- Church Members Image -->
-                        <img src="Assets/church members.jpg" class="img-fluid rounded shadow" alt="Members">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <img src="church members.jpg" class="img-fluid rounded shadow" alt="Church Members">
                     </div>
                     <div class="col-md-6">
-                        <p>The Way of God Bible Ministry was founded to spread the unadulterated Word of God and raise disciples for Christ.</p>
-                        <p>We are a beacon of hope and transformation, led by the spirit of God to impact our generation through prayer and the Word.</p>
+                        <p>The Way of God Bible Ministry was founded to spread the unadulterated Word of God and raise disciples for Christ. We are a beacon of hope and transformation in our community.</p>
+                        <p>Join us as we walk in the path of righteousness, experiencing God's miraculous hand in every aspect of our lives.</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Church Programs Section -->
         <section id="events">
             <div class="container">
-                <h2 class="text-center mb-5">Church Programs</h2>
+                <h2>Church Programs</h2>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
                     <!-- Sunday Service -->
                     <div class="col">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <img src="Assets/IMG-20250225-WA0002.jpg" class="event-image" alt="Sunday Service">
-                            <div class="card-body">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="SUNDAY SERVICE.jpg" class="event-image" alt="Sunday Service">
+                            <div class="card-body text-center">
                                 <h5 class="card-title text-primary fw-bold">Sunday Service</h5>
                                 <h6 class="text-muted">Sundays, 8:00 AM</h6>
                             </div>
@@ -141,9 +166,9 @@
                     </div>
                     <!-- Bible Study -->
                     <div class="col">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <img src="Assets/Church Bible study.jpg" class="event-image" alt="Bible Study">
-                            <div class="card-body">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="Bible Study.jpg" class="event-image" alt="Bible Study">
+                            <div class="card-body text-center">
                                 <h5 class="card-title text-primary fw-bold">Bible Study</h5>
                                 <h6 class="text-muted">Wednesdays, 5:00 PM</h6>
                             </div>
@@ -151,9 +176,9 @@
                     </div>
                     <!-- Prayer Meeting -->
                     <div class="col">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <img src="Assets/4b0ab2bc4e9356773cae8fd23db455a5.jpg" class="event-image" alt="Prayer">
-                            <div class="card-body">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="MEDIA CHURCH LOGO.jpg" class="event-image" alt="Prayer Meeting">
+                            <div class="card-body text-center">
                                 <h5 class="card-title text-primary fw-bold">Prayer Meeting</h5>
                                 <h6 class="text-muted">Fridays, 5:00 PM</h6>
                             </div>
@@ -161,11 +186,11 @@
                     </div>
                     <!-- Gba Pada -->
                     <div class="col">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <img src="Assets/Media work.jpg" class="event-image" alt="Gba Pada">
-                            <div class="card-body">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="Gba pada.jpg" class="event-image" alt="Gba Pada">
+                            <div class="card-body text-center">
                                 <h5 class="card-title text-primary fw-bold">Gba Pada</h5>
-                                <h6 class="text-muted">Monthly Special</h6>
+                                <h6 class="text-muted">Monthly Program</h6>
                             </div>
                         </div>
                     </div>
@@ -173,6 +198,7 @@
             </div>
         </section>
 
+        <!-- Contact Section -->
         <section id="contact">
             <div class="container text-center">
                 <h2>Contact Us</h2>
@@ -218,6 +244,7 @@
         </div>
     </div>
 
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {

@@ -44,7 +44,6 @@
 
         /* Hero Section (Jumbotron like) */
         .hero-section {
-            /* Updated background to use your church building image */
             background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./Assets/church building-1.jpg') center center / cover no-repeat;
             color: white;
             padding: 8rem 0;
@@ -53,7 +52,7 @@
             border-bottom-right-radius: 50px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
             position: relative;
-            overflow: hidden; /* Ensure rounded corners are visible */
+            overflow: hidden; 
         }
         .hero-section h1 {
             font-size: 3.5rem;
@@ -82,7 +81,7 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
         section:nth-of-type(even) {
-            background-color: var(--secondary-color); /* Alternate background for sections */
+            background-color: var(--secondary-color); 
         }
         section h2 {
             font-size: 2.5rem;
@@ -112,7 +111,7 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.08);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             padding: 2rem;
-            height: 100%; /* Ensure cards are same height */
+            height: 100%; 
         }
         .ministry-card:hover {
             transform: translateY(-5px);
@@ -124,43 +123,9 @@
             margin-bottom: 1rem;
         }
 
-        /* Anniversary Section Specific */
-        .anniversary-section {
-            background: linear-gradient(45deg, #f06d06, #ff8c00); /* Orange/Gold gradient */
-            color: white;
-            padding: 5rem 0;
-            text-align: center;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            animation: pulse 2s infinite alternate; /* Subtle breathing effect */
-        }
-        @keyframes pulse {
-            from { transform: scale(1); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
-            to { transform: scale(1.01); box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
-        }
-        .anniversary-section h2 {
-            color: white; /* Override default heading color */
-        }
-        .anniversary-section h3 {
-            font-size: 2.8rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
-        .anniversary-section p {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
-        }
-        .anniversary-countdown {
-            font-size: 2.5rem;
-            font-weight: bold;
-            letter-spacing: 2px;
-            margin-top: 1.5rem;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
-        }
-
         /* Footer Styling */
         footer {
-            background-color: #212529; /* Dark footer */
+            background-color: #212529; 
             color: rgba(255, 255, 255, 0.7);
             padding: 3rem 0;
             font-size: 0.9rem;
@@ -177,7 +142,7 @@
             color: var(--accent-color);
         }
 
-        /* Modal specific styling (for Children Exam Login) */
+        /* Modal specific styling */
         .modal-content {
             border-radius: 10px;
             box-shadow: 0 8px 25px rgba(0,0,0,0.2);
@@ -200,30 +165,18 @@
 
         /* Responsive adjustments */
         @media (max-width: 768px) {
-            .hero-section h1 {
-                font-size: 2.5rem;
-            }
-            .hero-section p {
-                font-size: 1.1rem;
-            }
-            section h2 {
-                font-size: 2rem;
-            }
-            .anniversary-section h3 {
-                font-size: 2rem;
-            }
-            .anniversary-section p {
-                font-size: 1rem;
-            }
+            .hero-section h1 { font-size: 2.5rem; }
+            .hero-section p { font-size: 1.1rem; }
+            section h2 { font-size: 2rem; }
         }
-        /* New CSS for event images */
+
         .event-image {
-            width: 100%; /* Make image fill the card width */
-            height: 200px; /* Fixed height for consistency */
-            object-fit: cover; /* Cover the area, cropping if necessary */
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
-            margin-bottom: 1rem; /* Space between image and card body */
+            margin-bottom: 1rem;
         }
     </style>
 </head>
@@ -253,9 +206,6 @@
                             <li><a class="dropdown-item" href="#youth-ministry">Youth Ministry</a></li>
                             <li><a class="dropdown-item" href="#children-ministry">Children's Ministry</a></li>
                         </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#anniversary">20th Anniversary</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#events">Events</a>
@@ -293,48 +243,33 @@
                     </div>
                     <div class="col-md-6">
                         <p>The Way of God Bible Ministry, also known as Mountain of Praise, was founded on the divine mandate to spread the unadulterated Word of God and raise disciples for Christ. For nearly two decades, we have been a beacon of hope and transformation in our community, fostering spiritual growth, nurturing families, and impacting lives through the power of God's love.</p>
-                        <p>Our journey has been one of faith, dedication, and countless testimonies. As we approach our 20th Anniversary in December, we look back with gratitude and look forward with renewed zeal to continue fulfilling our mission of making a way in the wilderness and rivers in the desert, just as promised in Isaiah 43:19.</p>
+                        <p>Our journey has been one of faith, dedication, and countless testimonies. We continue to walk with renewed zeal to fulfill our mission of making a way in the wilderness and rivers in the desert, just as promised in Isaiah 43:19.</p>
                         <p>Join us as we walk in the path of righteousness, experiencing God's miraculous hand in every aspect of our lives.</p>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- Ministries Section -->
         <section id="ministries">
             <div class="container">
                 <h2>Our Ministries</h2>
                 <div class="row g-4">
-                    <!-- Youth Ministry -->
                     <div class="col-md-6" id="youth-ministry">
                         <div class="ministry-card">
                             <h3>Youth Ministry - "Generation of Fire"</h3>
-                            <p>Our Youth Ministry, "Generation of Fire," is dedicated to empowering young people to live vibrant, purpose-driven lives rooted in Christ. We provide a dynamic environment for spiritual growth, leadership development, mentorship, and fellowship through weekly Bible studies, engaging workshops, fun social events, and community outreach.</p>
-                            <p>We believe in raising a generation that will stand strong in faith, influence their peers positively, and be agents of change in their world for God's glory. Join us every Saturday for our exciting youth fellowship!</p>
+                            <p>Our Youth Ministry, "Generation of Fire," is dedicated to empowering young people to live vibrant, purpose-driven lives rooted in Christ. Join us every Saturday for our exciting youth fellowship!</p>
                             <a href="#" class="btn btn-outline-primary btn-sm mt-3">Learn More</a>
                         </div>
                     </div>
-                    <!-- Children's Ministry -->
                     <div class="col-md-6" id="children-ministry">
                         <div class="ministry-card">
                             <h3>Children's Ministry - "God's Little Lambs"</h3>
-                            <p>The Children's Ministry, "God's Little Lambs," is committed to nurturing our youngest members in a safe, fun, and Christ-centered environment. We teach biblical truths through engaging lessons, creative activities, songs, and age-appropriate discussions, helping children build a strong foundation in faith from an early age.</p>
-                            <p>Our dedicated teachers ensure every child feels loved, valued, and excited about learning God's Word. We prepare them to understand Christian values, preparing them for future exams and life challenges.</p>
+                            <p>The Children's Ministry is committed to nurturing our youngest members in a safe, fun, and Christ-centered environment.</p>
                             <a href="#" class="btn btn-outline-primary btn-sm mt-3">View Curriculum</a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- 20th Anniversary Celebration Section -->
-        <section id="anniversary" class="anniversary-section">
-            <div class="container">
-                <h2>Celebrating 20 Years of God's Faithfulness!</h2>
-                <h3>A Milestone of Praise</h3>
-                <p>We are thrilled to announce our 20th Anniversary Celebration in December! Two decades of God's unwavering faithfulness, countless blessings, and transformed lives. Join us as we commemorate this significant milestone with a series of power-packed events.</p>
-                <p>Stay tuned for details on our anniversary convention, thanksgiving service, and outreach programs. Mark your calendars for December – it's going to be a season of unprecedented praise!</p>
-                <div class="anniversary-countdown text-uppercase" id="anniversary-countdown">Loading countdown...</div>
-                <a href="#" class="btn btn-light btn-lg mt-4 shadow-lg">Discover Anniversary Events</a>
             </div>
         </section>
 
@@ -345,44 +280,21 @@
                 <div class="row row-cols-1 row-cols-md-2 g-4">
                     <div class="col">
                         <div class="card h-100 shadow-sm">
-                            <!-- Sunday Service Image -->
                             <img src="./Assets/SUNDAY SERVICE.jpg" class="card-img-top event-image" alt="Sunday Service">
                             <div class="card-body">
                                 <h5 class="card-title text-primary">Sunday Service</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">Every Sunday, 8:00 AM - 12:00 PM</h6>
-                                <p class="card-text">Join us for a powerful time of worship, inspiring messages, and fellowship. Come experience God's presence!</p>
+                                <p class="card-text">Join us for a powerful time of worship, inspiring messages, and fellowship.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card h-100 shadow-sm">
-                            <!-- Midweek Bible Study Image -->
                             <img src="./Assets/Bible Study-1.jpg" class="card-img-top event-image" alt="Midweek Bible Study">
                             <div class="card-body">
                                 <h5 class="card-title text-primary">Midweek Bible Study</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">Every Wednesday, 5:00 PM</h6>
-                                <p class="card-text">Dive deeper into God's Word with our engaging and interactive Bible study sessions. All are welcome!</p>
-                            </div>
-                        </div>
-                    </div>
-                        <div class="col">
-                        <div class="card h-100 shadow-sm">
-                            <!-- GBA PADA Image -->
-                            <img src="./Assets/IMG-20250225-WA0002.jpg" class="card-img-top event-image" alt="GBA PADA (Take It Back)">
-                            <div class="card-body">
-                                <h5 class="card-title text-primary">GBA PADA (TAKE IT BACK)</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Last Tuesday of Each Month, 9:00AM - 12:00PM</h6>
-                                <p class="card-text">Come with an expectant heart to take back what the devil has stolen from you, what you have lost out of ignorance, and what sin has stolen from you. He answers us when we pray.</p>
-                            </div>
-                        </div>
-                    </div>
-                        <div class="col">
-                        <div class="card h-100 shadow-sm">
-                            <img src="./Assets/4b0ab2bc4e9356773cae8fd23db455a5.jpg" class="card-img-top event-image" alt="Prayer is the key">
-                            <div class="card-body">
-                                <h5 class="card-title text-primary">Prayer Meeting</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Wednesday & Thursday, 5:00PM - 7:00 PM, Friday, Vigil to dawn</h6>
-                                <p class="card-text">Prayer is the key. You don't want to be sleeping when the enemy is up and about looking for whom to devour. Don't miss out!</p>
+                                <p class="card-text">Dive deeper into God's Word with our interactive Bible study sessions.</p>
                             </div>
                         </div>
                     </div>
@@ -396,7 +308,6 @@
                 <h2>Contact Us</h2>
                 <div class="row justify-content-center">
                     <div class="col-md-8">
-                        <p class="text-center mb-4">Have questions or need to connect? We'd love to hear from you!</p>
                         <div class="row text-center">
                             <div class="col-md-4 mb-3">
                                 <h5>Address</h5>
@@ -411,14 +322,12 @@
                                 <p><a href="mailto:info@wayofgod.org">info@wayofgod.org</a></p>
                             </div>
                         </div>
-                        <p class="text-center mt-4">You can also visit us during any of our service times. We look forward to welcoming you!</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="text-center">
         <div class="container">
             <p>&copy; 2025 THE WAY OF GOD BIBLE MINISTRY. All Rights Reserved.</p>
@@ -427,7 +336,6 @@
                 <a href="#" class="text-white mx-2">Instagram</a> |
                 <a href="#" class="text-white mx-2">YouTube</a>
             </p>
-            <p><small>Designed with Faith, Love and Passion.</small></p>
         </div>
     </footer>
 
@@ -440,7 +348,6 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p class="text-center text-muted">Please log in to access the children's exam platform.</p>
                     <form id="childrenLoginForm">
                         <div class="mb-3">
                             <label for="childUsername" class="form-label">Username</label>
@@ -454,15 +361,12 @@
                             <button type="submit" class="btn btn-primary">Login</button>
                         </div>
                     </form>
-                    <p class="text-center mt-3"><small>Don't have an account? Contact your Sunday School teacher.</small></p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Bootstrap JavaScript Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Link to your custom JavaScript file -->
     <script src="church.js"></script>
 </body>
 </html>

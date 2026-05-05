@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>THE WAY OF GOD BIBLE MINISTRY</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome for Social Media Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -29,31 +26,23 @@
         .navbar-brand {
             font-weight: 700;
             color: rgb(243, 220, 220) !important;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
         .navbar-nav .nav-link {
             color: rgb(243, 220, 220) !important;
-            transition: color 0.3s ease;
         }
         .bg-custom-blue {
             background-color: #004085;
         }
 
         .hero-section {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./Assets/church building-1.jpg') center center / cover no-repeat;
+            /* Using your church building image for the hero background */
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Assets/church building.jpg') center center / cover no-repeat;
             color: white;
             padding: 8rem 0;
             text-align: center;
             border-bottom-left-radius: 50px;
             border-bottom-right-radius: 50px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            position: relative;
-            overflow: hidden;
-        }
-        .hero-section h1 {
-            font-size: 3.5rem;
-            font-weight: 700;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
         }
 
         section {
@@ -61,30 +50,6 @@
             background-color: white;
             margin-bottom: 2rem;
             border-radius: 15px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-        section:nth-of-type(even) {
-            background-color: var(--secondary-color);
-        }
-        section h2 {
-            font-size: 2.5rem;
-            font-weight: 600;
-            color: var(--primary-color);
-            margin-bottom: 2rem;
-            text-align: center;
-            position: relative;
-            padding-bottom: 10px;
-        }
-        section h2::after {
-            content: '';
-            position: absolute;
-            left: 50%;
-            bottom: 0;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background-color: var(--accent-color);
-            border-radius: 2px;
         }
 
         .event-image {
@@ -99,25 +64,14 @@
             color: white;
             font-size: 1.5rem;
             margin: 0 15px;
-            transition: color 0.3s ease, transform 0.3s ease;
-            display: inline-block;
+            transition: 0.3s;
         }
-        .social-icons a:hover {
-            color: #ffc107;
-            transform: scale(1.2);
-        }
+        .social-icons a:hover { color: #ffc107; }
 
         footer {
             background-color: #212529;
             color: rgba(255, 255, 255, 0.7);
             padding: 3rem 0;
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-        }
-
-        @media (max-width: 768px) {
-            .hero-section h1 { font-size: 2.5rem; }
-            section h2 { font-size: 2rem; }
         }
     </style>
 </head>
@@ -125,8 +79,9 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-custom-blue sticky-top shadow-sm">
         <div class="container">
-            <img src="./Assets/-CHURCH LOGO-.jpg" height="40" width="40" alt="logo"> 
-            <a class="navbar-brand" href="#home"> THE WAY OF GOD BIBLE MINISTRY</a>
+            <!-- Your Logo -->
+            <img src="Assets/-CHURCH LOGO-.jpg" height="40" width="40" alt="logo" class="rounded-circle me-2"> 
+            <a class="navbar-brand" href="#home">THE WAY OF GOD BIBLE MINISTRY</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -134,13 +89,6 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navDrop" data-bs-toggle="dropdown">Ministries</a>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="#youth-ministry">Youth Ministry</a></li>
-                            <li><a class="dropdown-item" href="#children-ministry">Children's Ministry</a></li>
-                        </ul>
-                    </li>
                     <li class="nav-item"><a class="nav-link" href="#events">Programs</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     <li class="nav-item">
@@ -153,76 +101,71 @@
 
     <section id="home" class="hero-section">
         <div class="container">
-            <h1 class="display-3">THE WAY OF GOD BIBLE MINISTRY</h1>
+            <h1 class="display-3 fw-bold">THE WAY OF GOD BIBLE MINISTRY</h1>
             <p class="h4">Mountain of Praise</p>
             <p class="lead">"Behold, I will do a new thing..." - Isaiah 43:19</p>
-            <a href="#events" class="btn btn-warning btn-lg mt-3 shadow">Join Us This Sunday!</a>
+            <a href="#events" class="btn btn-warning btn-lg mt-3">Join Us This Sunday!</a>
         </div>
     </section>
 
     <main class="container mt-5">
-        <!-- About Section -->
         <section id="about">
             <div class="container">
-                <h2>About Our Ministry</h2>
+                <h2 class="text-center mb-4">About Our Ministry</h2>
                 <div class="row align-items-center">
-                    <div class="col-md-6 mb-4 mb-md-0">
-                        <img src="./Assets/church members.jpg" class="img-fluid rounded shadow-sm" alt="Members">
+                    <div class="col-md-6 mb-4">
+                        <!-- Church Members Image -->
+                        <img src="Assets/church members.jpg" class="img-fluid rounded shadow" alt="Members">
                     </div>
                     <div class="col-md-6">
-                        <p>The Way of God Bible Ministry was founded to spread the unadulterated Word of God and raise disciples for Christ. We are a beacon of hope and transformation in our community.</p>
-                        <p>Join us as we walk in the path of righteousness, experiencing God's miraculous hand in every aspect of our lives.</p>
+                        <p>The Way of God Bible Ministry was founded to spread the unadulterated Word of God and raise disciples for Christ.</p>
+                        <p>We are a beacon of hope and transformation, led by the spirit of God to impact our generation through prayer and the Word.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Church Programs Section -->
         <section id="events">
             <div class="container">
-                <h2>Church Programs</h2>
+                <h2 class="text-center mb-5">Church Programs</h2>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
                     <!-- Sunday Service -->
                     <div class="col">
-                        <div class="card h-100 shadow-sm border-0">
-                            <img src="./Assets/SUNDAY SERVICE.jpg" class="event-image" alt="Sunday">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <img src="Assets/IMG-20250225-WA0002.jpg" class="event-image" alt="Sunday Service">
                             <div class="card-body">
                                 <h5 class="card-title text-primary fw-bold">Sunday Service</h5>
                                 <h6 class="text-muted">Sundays, 8:00 AM</h6>
-                                <p class="card-text small">Worship, inspiring messages, and fellowship.</p>
                             </div>
                         </div>
                     </div>
                     <!-- Bible Study -->
                     <div class="col">
-                        <div class="card h-100 shadow-sm border-0">
-                            <img src="./Assets/Bible Study-1.jpg" class="event-image" alt="Bible Study">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <img src="Assets/Church Bible study.jpg" class="event-image" alt="Bible Study">
                             <div class="card-body">
                                 <h5 class="card-title text-primary fw-bold">Bible Study</h5>
                                 <h6 class="text-muted">Wednesdays, 5:00 PM</h6>
-                                <p class="card-text small">Diving deep into the Word of God.</p>
                             </div>
                         </div>
                     </div>
                     <!-- Prayer Meeting -->
                     <div class="col">
-                        <div class="card h-100 shadow-sm border-0">
-                            <img src="./Assets/prayer-meeting.jpg" class="event-image" alt="Prayer Meeting">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <img src="Assets/4b0ab2bc4e9356773cae8fd23db455a5.jpg" class="event-image" alt="Prayer">
                             <div class="card-body">
                                 <h5 class="card-title text-primary fw-bold">Prayer Meeting</h5>
                                 <h6 class="text-muted">Fridays, 5:00 PM</h6>
-                                <p class="card-text small">A time of intercession and spiritual warfare.</p>
                             </div>
                         </div>
                     </div>
                     <!-- Gba Pada -->
                     <div class="col">
-                        <div class="card h-100 shadow-sm border-0">
-                            <img src="./Assets/gba-pada.jpg" class="event-image" alt="Gba Pada">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <img src="Assets/Media work.jpg" class="event-image" alt="Gba Pada">
                             <div class="card-body">
                                 <h5 class="card-title text-primary fw-bold">Gba Pada</h5>
-                                <h6 class="text-muted">Monthly Program</h6>
-                                <p class="card-text small">A special deliverance and recovery service.</p>
+                                <h6 class="text-muted">Monthly Special</h6>
                             </div>
                         </div>
                     </div>
@@ -230,7 +173,6 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
         <section id="contact">
             <div class="container text-center">
                 <h2>Contact Us</h2>
@@ -276,7 +218,6 @@
         </div>
     </div>
 
-    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -293,17 +234,11 @@
             if (childrenLoginForm) {
                 childrenLoginForm.addEventListener('submit', (event) => {
                     event.preventDefault();
-                    const username = childUsernameInput.value;
-                    const password = childPasswordInput.value;
-
-                    const correctUsername = 'child';
-                    const correctPassword = 'password123'; 
-
-                    if (username === correctUsername && password === correctPassword) {
+                    if (childUsernameInput.value === 'child' && childPasswordInput.value === 'password123') {
                         if (childrenExamLoginModal) childrenExamLoginModal.hide();
                         window.location.href = 'https://church-cbt.vercel.app/'; 
                     } else {
-                        alert('Invalid username or password. Please try again.');
+                        alert('Invalid login credentials.');
                     }
                 });
             }

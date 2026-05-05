@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>THE WAY OF GOD BIBLE MINISTRY</title>
-    <!-- Bootstrap CSS for modern and responsive design -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Google Fonts - Inter for clean typography -->
+    <!-- Font Awesome for Social Media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -85,16 +87,24 @@
             border-radius: 2px;
         }
 
-        .ministry-card {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease;
-            padding: 2rem;
-            height: 100%;
+        .event-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
         }
-        .ministry-card:hover {
-            transform: translateY(-5px);
+
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 15px;
+            transition: color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+        }
+        .social-icons a:hover {
+            color: #ffc107;
+            transform: scale(1.2);
         }
 
         footer {
@@ -103,14 +113,6 @@
             padding: 3rem 0;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
-        }
-
-        .event-image {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
         }
 
         @media (max-width: 768px) {
@@ -159,6 +161,7 @@
     </section>
 
     <main class="container mt-5">
+        <!-- About Section -->
         <section id="about">
             <div class="container">
                 <h2>About Our Ministry</h2>
@@ -174,27 +177,52 @@
             </div>
         </section>
 
+        <!-- Church Programs Section -->
         <section id="events">
             <div class="container">
                 <h2>Church Programs</h2>
-                <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                    <!-- Sunday Service -->
                     <div class="col">
                         <div class="card h-100 shadow-sm border-0">
                             <img src="./Assets/SUNDAY SERVICE.jpg" class="event-image" alt="Sunday">
                             <div class="card-body">
                                 <h5 class="card-title text-primary fw-bold">Sunday Service</h5>
-                                <h6 class="text-muted">Every Sunday, 8:00 AM</h6>
-                                <p class="card-text">A powerful time of worship, inspiring messages, and fellowship.</p>
+                                <h6 class="text-muted">Sundays, 8:00 AM</h6>
+                                <p class="card-text small">Worship, inspiring messages, and fellowship.</p>
                             </div>
                         </div>
                     </div>
+                    <!-- Bible Study -->
                     <div class="col">
                         <div class="card h-100 shadow-sm border-0">
                             <img src="./Assets/Bible Study-1.jpg" class="event-image" alt="Bible Study">
                             <div class="card-body">
-                                <h5 class="card-title text-primary fw-bold">Midweek Bible Study</h5>
-                                <h6 class="text-muted">Every Wednesday, 5:00 PM</h6>
-                                <p class="card-text">Dive deeper into God's Word with interactive sessions.</p>
+                                <h5 class="card-title text-primary fw-bold">Bible Study</h5>
+                                <h6 class="text-muted">Wednesdays, 5:00 PM</h6>
+                                <p class="card-text small">Diving deep into the Word of God.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Prayer Meeting -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="./Assets/prayer-meeting.jpg" class="event-image" alt="Prayer Meeting">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary fw-bold">Prayer Meeting</h5>
+                                <h6 class="text-muted">Fridays, 5:00 PM</h6>
+                                <p class="card-text small">A time of intercession and spiritual warfare.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gba Pada -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="./Assets/gba-pada.jpg" class="event-image" alt="Gba Pada">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary fw-bold">Gba Pada</h5>
+                                <h6 class="text-muted">Monthly Program</h6>
+                                <p class="card-text small">A special deliverance and recovery service.</p>
                             </div>
                         </div>
                     </div>
@@ -202,6 +230,7 @@
             </div>
         </section>
 
+        <!-- Contact Section -->
         <section id="contact">
             <div class="container text-center">
                 <h2>Contact Us</h2>
@@ -213,6 +242,11 @@
 
     <footer class="text-center">
         <div class="container">
+            <div class="social-icons mb-4">
+                <a href="https://web.facebook.com/profile.php?id=61575100773522" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/thewayofgod64?igsh=N20xdGFycmtrNmd2&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@the.way.of.god.bi?_r=1&_t=ZS-95EiuQc7VAu" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </div>
             <p>&copy; 2025 THE WAY OF GOD BIBLE MINISTRY.</p>
         </div>
     </footer>
@@ -242,19 +276,15 @@
         </div>
     </div>
 
-    <!-- Bootstrap Bundle JS -->
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Internal JS Logic -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // --- Children Exam Login Modal Logic ---
             const loginModalElement = document.getElementById('childrenExamLoginModal');
             const childrenLoginForm = document.getElementById('childrenLoginForm');
             const childUsernameInput = document.getElementById('childUsername');
             const childPasswordInput = document.getElementById('childPassword');
 
-            // Initialize the Bootstrap Modal instance
             let childrenExamLoginModal;
             if (loginModalElement) {
                 childrenExamLoginModal = new bootstrap.Modal(loginModalElement);
@@ -262,25 +292,18 @@
 
             if (childrenLoginForm) {
                 childrenLoginForm.addEventListener('submit', (event) => {
-                    event.preventDefault(); // Prevent default form submission
-
+                    event.preventDefault();
                     const username = childUsernameInput.value;
                     const password = childPasswordInput.value;
 
-                    // Simple hardcoded validation for demonstration
                     const correctUsername = 'child';
                     const correctPassword = 'password123'; 
 
                     if (username === correctUsername && password === correctPassword) {
-                        // Close the modal
-                        if (childrenExamLoginModal) {
-                            childrenExamLoginModal.hide();
-                        }
-                        // Redirect to the CBT portal
+                        if (childrenExamLoginModal) childrenExamLoginModal.hide();
                         window.location.href = 'https://church-cbt.vercel.app/'; 
                     } else {
-                        // Show an error message
-                        alert('Invalid username or password. Please try again or contact your Sunday School teacher.');
+                        alert('Invalid username or password. Please try again.');
                     }
                 });
             }

@@ -9,23 +9,21 @@
     <!-- Google Fonts - Inter for clean typography -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Custom Styles for an Astonishing yet Simple Look */
         :root {
-            --primary-color: #021223; /* Darker blue for accents */
-            --secondary-color: #f8f9fa; /* Light background for sections */
-            --text-color: #343a40; /* Dark grey for general text */
-            --light-text-color: #6c757d; /* Lighter grey for secondary text */
-            --accent-color: #28a745; /* Green for success/highlights */
+            --primary-color: #021223;
+            --secondary-color: #f8f9fa;
+            --text-color: #343a40;
+            --light-text-color: #6c757d;
+            --accent-color: #28a745;
         }
 
         body {
             font-family: 'Inter', sans-serif;
             line-height: 1.6;
             color: var(--text-color);
-            background-color: #031828; /* Very light subtle background */
+            background-color: #031828;
         }
 
-        /* Navbar Styling */
         .navbar-brand {
             font-weight: 700;
             color: rgb(243, 220, 220) !important;
@@ -35,14 +33,10 @@
             color: rgb(243, 220, 220) !important;
             transition: color 0.3s ease;
         }
-        .navbar-nav .nav-link:hover {
-            color: rgb(243, 220, 220) !important;
-        }
         .bg-custom-blue {
-            background-color: #004085; /* A deep blue */
+            background-color: #004085;
         }
 
-        /* Hero Section (Jumbotron like) */
         .hero-section {
             background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./Assets/church building-1.jpg') center center / cover no-repeat;
             color: white;
@@ -52,27 +46,14 @@
             border-bottom-right-radius: 50px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
             position: relative;
-            overflow: hidden; 
+            overflow: hidden;
         }
         .hero-section h1 {
             font-size: 3.5rem;
             font-weight: 700;
-            margin-bottom: 1rem;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
         }
-        .hero-section p {
-            font-size: 1.4rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-        }
-        .hero-section .lead {
-            font-style: italic;
-            font-size: 1.1rem;
-            margin-top: 1.5rem;
-            opacity: 0.8;
-        }
 
-        /* General Section Styling */
         section {
             padding: 4rem 0;
             background-color: white;
@@ -104,104 +85,61 @@
             border-radius: 2px;
         }
 
-        /* Ministries Cards */
         .ministry-card {
             background-color: white;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.3s ease;
             padding: 2rem;
             height: 100%;
         }
         .ministry-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-        }
-        .ministry-card h3 {
-            color: var(--primary-color);
-            font-weight: 600;
-            margin-bottom: 1rem;
         }
 
-        /* Footer Styling */
         footer {
-            background-color: #212529; 
+            background-color: #212529;
             color: rgba(255, 255, 255, 0.7);
             padding: 3rem 0;
-            font-size: 0.9rem;
-            margin-top: 3rem;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
-        }
-        footer a {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        footer a:hover {
-            color: var(--accent-color);
-        }
-
-        /* Modal specific styling */
-        .modal-content {
-            border-radius: 10px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-        }
-        .modal-header {
-            border-bottom: none;
-            padding-bottom: 0;
-        }
-        .modal-title {
-            font-weight: 600;
-            color: var(--primary-color);
-        }
-        .modal-body .form-control {
-            border-radius: 8px;
-            padding: 10px 15px;
-        }
-        .modal-footer {
-            border-top: none;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .hero-section h1 { font-size: 2.5rem; }
-            .hero-section p { font-size: 1.1rem; }
-            section h2 { font-size: 2rem; }
         }
 
         .event-image {
             width: 100%;
-            height: 200px;
+            height: 250px;
             object-fit: cover;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
-            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section h1 { font-size: 2.5rem; }
+            section h2 { font-size: 2rem; }
         }
     </style>
 </head>
 <body>
 
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-custom-blue sticky-top shadow-sm">
         <div class="container">
-            <img src="./Assets/-CHURCH LOGO-.jpg" height="40" width="40" alt="church logo"> 
+            <img src="./Assets/-CHURCH LOGO-.jpg" height="40" width="40" alt="logo"> 
             <a class="navbar-brand" href="#home"> THE WAY OF GOD BIBLE MINISTRY</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ministries</a>
-                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navDrop" data-bs-toggle="dropdown">Ministries</a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
                             <li><a class="dropdown-item" href="#youth-ministry">Youth Ministry</a></li>
                             <li><a class="dropdown-item" href="#children-ministry">Children's Ministry</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#events">Church Program</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#events">Programs</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     <li class="nav-item">
                         <a class="nav-link btn btn-outline-light btn-sm ms-lg-2" href="#" data-bs-toggle="modal" data-bs-target="#childrenExamLoginModal">Children Exam Login</a>
@@ -211,79 +149,52 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero-section">
         <div class="container">
             <h1 class="display-3">THE WAY OF GOD BIBLE MINISTRY</h1>
             <p class="h4">Mountain of Praise</p>
-            <p class="lead">"Behold, I will do a new thing; now it shall spring forth; shall ye not know it? I will even make a way in the wilderness, and rivers in the desert."</p>
-            <p class="lead fw-bold">Isaiah 43:19</p>
+            <p class="lead">"Behold, I will do a new thing..." - Isaiah 43:19</p>
             <a href="#events" class="btn btn-warning btn-lg mt-3 shadow">Join Us This Sunday!</a>
         </div>
     </section>
 
     <main class="container mt-5">
-        <!-- About Us Section -->
         <section id="about">
             <div class="container">
                 <h2>About Our Ministry</h2>
                 <div class="row align-items-center">
                     <div class="col-md-6 mb-4 mb-md-0">
-                        <img src="./Assets/church members.jpg" class="img-fluid rounded-lg shadow-sm" alt="Church Family">
+                        <img src="./Assets/church members.jpg" class="img-fluid rounded shadow-sm" alt="Members">
                     </div>
                     <div class="col-md-6">
-                        <p>The Way of God Bible Ministry, also known as Mountain of Praise, was founded on the divine mandate to spread the unadulterated Word of God and raise disciples for Christ. We have been a beacon of hope and transformation in our community, fostering spiritual growth, nurturing families, and impacting lives through the power of God's love.</p>
-                        <p>Our journey has been one of faith, dedication, and countless testimonies. Join us as we walk in the path of righteousness, experiencing God's miraculous hand in every aspect of our lives.</p>
+                        <p>The Way of God Bible Ministry was founded to spread the unadulterated Word of God and raise disciples for Christ. We are a beacon of hope and transformation in our community.</p>
+                        <p>Join us as we walk in the path of righteousness, experiencing God's miraculous hand in every aspect of our lives.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Ministries Section -->
-        <section id="ministries">
-            <div class="container">
-                <h2>Our Ministries</h2>
-                <div class="row g-4">
-                    <div class="col-md-6" id="youth-ministry">
-                        <div class="ministry-card">
-                            <h3>Youth Ministry - "Generation of Fire"</h3>
-                            <p>Our Youth Ministry is dedicated to empowering young people to live vibrant, purpose-driven lives rooted in Christ through weekly Bible studies, workshops, and fellowship.</p>
-                            <a href="#" class="btn btn-outline-primary btn-sm mt-3">Learn More</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6" id="children-ministry">
-                        <div class="ministry-card">
-                            <h3>Children's Ministry - "God's Little Lambs"</h3>
-                            <p>We nurture our youngest members in a safe, fun, and Christ-centered environment, helping children build a strong foundation in faith from an early age.</p>
-                            <a href="#" class="btn btn-outline-primary btn-sm mt-3">View Curriculum</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Events Section -->
         <section id="events">
             <div class="container">
-                <h2>Church Programs </h2>
-                <div class="row row-cols-1 row-cols-md-2 g-4">
+                <h2>Church Programs</h2>
+                <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
                     <div class="col">
-                        <div class="card h-100 shadow-sm">
-                            <img src="./Assets/SUNDAY SERVICE.jpg" class="card-img-top event-image" alt="Sunday Service">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="./Assets/SUNDAY SERVICE.jpg" class="event-image" alt="Sunday">
                             <div class="card-body">
-                                <h5 class="card-title text-primary">Sunday Service</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Every Sunday, 8:00 AM</h6>
-                                <p class="card-text">Join us for a powerful time of worship and inspiring messages.</p>
+                                <h5 class="card-title text-primary fw-bold">Sunday Service</h5>
+                                <h6 class="text-muted">Every Sunday, 8:00 AM</h6>
+                                <p class="card-text">A powerful time of worship, inspiring messages, and fellowship.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card h-100 shadow-sm">
-                            <img src="./Assets/Bible Study-1.jpg" class="card-img-top event-image" alt="Midweek Bible Study">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="./Assets/Bible Study-1.jpg" class="event-image" alt="Bible Study">
                             <div class="card-body">
-                                <h5 class="card-title text-primary">Midweek Bible Study</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Every Wednesday, 5:00 PM</h6>
-                                <p class="card-text">Dive deeper into God's Word with our interactive Bible study sessions.</p>
+                                <h5 class="card-title text-primary fw-bold">Midweek Bible Study</h5>
+                                <h6 class="text-muted">Every Wednesday, 5:00 PM</h6>
+                                <p class="card-text">Dive deeper into God's Word with interactive sessions.</p>
                             </div>
                         </div>
                     </div>
@@ -291,46 +202,23 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
         <section id="contact">
-            <div class="container">
+            <div class="container text-center">
                 <h2>Contact Us</h2>
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <div class="row text-center">
-                            <div class="col-md-4 mb-3">
-                                <h5>Address</h5>
-                                <p>No 13, Ogooluwa CDA, Abule Ake, Obada, Abeokuta, Ogun State</p>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <h5>Phone</h5>
-                                <p>+234 703 843 1533</p>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <h5>Email</h5>
-                                <p><a href="mailto:info@wayofgod.org">info@wayofgod.org</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <p>No 13, Ogooluwa CDA, Abule Ake, Obada, Abeokuta, Ogun State</p>
+                <p><strong>Phone:</strong> +234 703 843 1533</p>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="text-center">
         <div class="container">
-            <p>&copy; 2025 THE WAY OF GOD BIBLE MINISTRY. All Rights Reserved.</p>
-            <p>Follow us on:
-                <a href="https://www.facebook.com/share/1Ab36pcsVh/" class="text-white mx-2" target="_blank">Facebook</a> |
-                <a href="#" class="text-white mx-2">Instagram</a> |
-                <a href="#" class="text-white mx-2">YouTube</a>
-            </p>
+            <p>&copy; 2025 THE WAY OF GOD BIBLE MINISTRY.</p>
         </div>
     </footer>
 
-    <!-- Children Exam Login Modal -->
-    <div class="modal fade" id="childrenExamLoginModal" tabindex="-1" aria-hidden="true">
+    <!-- Login Modal -->
+    <div class="modal fade" id="childrenExamLoginModal" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -341,15 +229,13 @@
                     <form id="childrenLoginForm">
                         <div class="mb-3">
                             <label class="form-label">Username</label>
-                            <input type="text" class="form-control" required>
+                            <input type="text" class="form-control" id="childUsername" required>
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Password</label>
-                            <input type="password" class="form-control" required>
+                            <input type="password" class="form-control" id="childPassword" required>
                         </div>
-                        <div class="d-grid">
-                            <button type="submit" class="btn btn-primary">Login</button>
-                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login</button>
                     </form>
                 </div>
             </div>
